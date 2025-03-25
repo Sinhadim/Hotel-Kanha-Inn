@@ -1,0 +1,186 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: rgba(65, 56, 56, 0.256);
+    border-radius: 10px;
+}
+
+.main{
+    display: flex;
+    height: 99vh; width: 98.7vw;
+    position: relative;
+    background: transparent;
+}
+
+.nav1{
+    display: flex;
+    position: relative;
+    background: transparent;
+    .logo{
+        position: absolute;
+        display: block;
+        background: transparent;
+        h1 {
+            font-size: 50px;
+            position: relative;
+            background: transparent;
+            top: 5rem;
+            text-shadow: 1px 6px 12px rgb(0, 0, 0);
+            left: 11rem;
+            color: rgb(16, 215, 229);
+        }
+
+        img {
+        width: 90px;
+        background: transparent;
+        border-radius: 50%;
+        position: absolute;
+        top: 2.5rem;
+        right: 4.5rem;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+        animation: moveUp 15s ease-in-out;
+        }
+    }
+        .content {
+        position: relative;
+        top: 1.5rem;
+        left: 60em;
+        display: flex;
+        gap: 2rem;
+        background-color: transparent;
+        a{
+            background: transparent;
+            color: darkslategray;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            opacity: 0.9;
+            margin: 10px ;
+            height: 2rem;
+            text-shadow: 1px 3px 12px rgb(179, 73, 218); /*verticle,height,shadow */
+            &:hover{
+                border-radius: 7px;
+                transform: translateY(-30%);   
+                transition: 1s;
+            }
+        }
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+    }
+}
+
+.login,.signup{
+    display: flex;
+    height: 30rem; width: 25rem;
+    background-image: url("../image/backg.webp");
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    top: 7rem; left: 10rem;
+    box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 255, 255);
+
+    marquee{
+        margin: 1rem;
+        width: 35%;
+        border-radius: .5rem;
+        text-shadow: 1px 3px 12px rgb(179, 73, 218);
+        box-shadow: 1.5px 3px 5px 5px rgb(147, 221, 202);
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-weight: 800;
+        left: 7rem;
+        padding-left: 3rem;
+        border-radius: 10px;
+        height: 2rem; width: 12.5rem;  
+        background: transparent;
+        &::placeholder{
+            text-align: center;
+            border-bottom: 2px solid rgb(5, 4, 4);
+            width: 75%; height: 100%;
+            position: absolute;
+            background: transparent;
+            left: 2rem;
+            color: rgb(52,50,50);
+        }
+    }
+        i{
+            position: relative;
+            top: -1.7rem; left: 7.5rem;
+            font-size: 23px;
+            background: transparent;
+        }
+    label{
+        font-weight: 800;
+        color: black;
+        top: 2rem; left: 1rem;
+        position: relative;
+        font-size: 20px;
+        background: transparent;
+        border-bottom: 2px solid rgb(0, 60, 56);
+        border-radius: 10%;
+    }  
+     #Signbtn{
+        position: relative;
+        left: 7rem; top:3rem ;
+        height: 2.5rem; width: 5rem;
+        border-radius: 10%;
+        font-weight: 600;
+        background: transparent;
+        font-size: 15px;
+        &:hover{
+            transition: 1s;
+            font-weight: 700;
+            transform: scale(1.1);
+        }
+    }
+
+    #a{
+        text-decoration: none;
+        position: relative;
+        left: 12.5rem; top: 1rem;
+        font-size: 19px;
+        color: black;
+        font-weight: 200;
+        background: transparent;
+        border:none;
+        &:hover{
+            border-bottom: 3px solid rgb(0, 252, 219);
+            border-radius: 13%;
+            color: blueviolet;
+            transition: 1s;
+        }
+    }
+    #b{
+        text-decoration: none;
+        position: relative;
+        left: 9.5rem; top: 2.5rem;
+        font-size: 16px;
+        color: black;
+        font-weight: 200;
+        background: transparent;
+        border:none;
+        &:hover{
+            border-bottom: 3px solid rgb(0, 252, 219);
+            border-radius: 13%;
+            color: blueviolet;
+            transition: 1s;
+    }
+}
+}

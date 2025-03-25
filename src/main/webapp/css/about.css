@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@200;300;400;500;600;700;900&family=Rubik+Vinyl&display=swap');
+
+
+*{
+    margin: 0%; padding: 0%;
+    font-family: "Poppins", serif;
+    outline: none; border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main {
+    height: 96vh; 
+    width: 98.8vw;
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+}
+
+.slides{
+    height: 100%;
+    width: 99.9%;
+    border-radius: 20px;
+    position: absolute;
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+    }
+}
+.logo {
+    position: relative;
+    h1 {
+            font-size: 50px;
+            position: relative;
+            bottom: 14rem;
+            text-shadow: 1px 6px 12px rgb(0, 0, 0);
+            left: -4rem;
+            color: rgb(16, 215, 229);
+        }
+    img {
+        width: 90px;
+        background: transparent;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 15rem;
+        right: 49.5rem;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+        animation: moveUp 15s ease-in-out;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+    }
+}
+
+
+.nav1 {
+    position:absolute;
+}
+.content {
+    position: relative;
+    bottom: 18rem;
+    right: -20em;
+    display: flex;
+    gap: 2rem;
+    background-color: transparent;
+    a{
+        color: darkslategray;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        opacity: 0.9;
+        margin: 10px ;
+        text-shadow: 1px 3px 12px rgb(179, 73, 218); /*verticle,height,shadow */
+        &:hover{
+            border-radius: 7px;
+            transform: translateY(-30%);   
+            transition: .5s;
+        }
+    }
+}
+.about{
+    position: relative;
+    height: 46rem;
+    margin-top: .2rem;
+    width: 100%;
+    top: .6rem;
+    padding: 5rem 13rem;
+    box-shadow: 1px 1px 5px 5px rgba(94, 95, 93, 0.668);
+    border-radius: 14px;
+    h2{
+        text-align: center;
+        color: rgb(61, 5, 58);
+        font-size: 45px;
+    }
+    p{
+        text-align: center;
+        word-spacing: 4px;
+    }
+    h4{
+       text-align: center; 
+
+    }
+}
+.lastcontainer {
+    height: 30rem;
+    width: 99.5%;
+    box-shadow: 1px 3px 10px 10px rgba(149, 149, 174, 0.646);
+    background-color: rgba(35, 31, 31, 0.941);
+    position: relative;
+    top: 7rem;
+    display: flex;
+    justify-content: space-between;
+
+    .container {
+        height: 33rem;
+        width: 25.5rem;
+        color: whitesmoke;
+
+        h1 {
+            border-bottom: 1px solid rgba(190, 186, 178, 0.973);
+            margin: 2.3rem 2rem 2rem 2rem;
+            text-align: center;
+        }
+    }
+    .container {
+        h4 {
+            padding: 2rem;
+            position: relative;
+            letter-spacing: 1.3px;
+            word-spacing: 5px;
+        }
+    }
+
+}
+.symbol {
+    display: flex;
+    padding-left: 2.5rem;
+    position: relative;
+
+    i {
+        height: 30px;
+        width: 25px;
+        font-size: 22px;
+        position: absolute;
+        left: 10px;
+        top: 8px;
+    }
+    p{
+        position: relative;
+        padding: 6px 0px;
+    }
+}
+.firstcontainer {
+    display: flex;
+
+    ul {
+        margin: 1rem 0rem 2rem 0rem;
+        padding: 0rem 2.5rem;
+
+        li {
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            width: 8.5rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+
+

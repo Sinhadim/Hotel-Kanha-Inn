@@ -1,0 +1,481 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@200;300;400;500;600;700;900&family=Rubik+Vinyl&display=swap');
+
+
+*{
+    margin: 0%; padding: 0%;
+    font-family: "Poppins", serif;
+    outline: none; border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.firstpage{
+    height: 100vh;
+    width: 98.9vw;
+    .slider {
+        height: 100%;
+        width: 99.9%;
+        border-radius: 20px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            position: relative;
+        }
+    } 
+    .nav1{
+        position: relative;
+        bottom: 46rem;
+        max-width: 80%;
+        z-index: 1000;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            img {
+                max-width: 15%;
+                max-height: 15%;
+                display: block;
+                border-radius: 100%;
+                box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+                animation: moveUp 15s ease-in-out;
+            }
+            h1 {
+                font-size: 50px;
+                bottom: 15rem;
+                left: 2rem;
+                text-align: center;
+                text-shadow: 1px 6px 12px rgb(0, 0, 0);
+                color: rgb(16, 215, 229);
+            }
+        }
+    }
+    .content {
+        position: absolute;
+        right: 3rem;
+        display: flex;
+        gap: 2rem;
+        background-color: transparent;
+
+        a {
+            color: darkslategray;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            opacity: 0.9;
+            margin: 10px;
+            text-shadow: 1px 3px 12px rgb(179, 73, 218);
+
+            /*verticle,height,shadow */
+            &:hover {
+                border-radius: 7px;
+                transform: translateY(-30%);
+                transition: .5s;
+            }
+        }
+    }
+
+}
+
+
+.btn1{
+    
+    h3{
+        position: absolute; 
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        width: 7.5rem;
+        top: 35.5rem;
+        left: 40rem;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgba(28, 27, 28, 0.638);
+        border-radius: 10%;
+        animation: rotate;
+        text-decoration: none;
+        animation: rotate 3s linear infinite;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 10px rgb(95, 97, 97);
+        word-spacing: 3px;
+        font-size: 18px;
+        justify-content: space-around;
+        &:hover{
+            animation: none;
+            background-color: rgba(169, 169, 169, 0.446);
+            color: indigo;
+            border: 4px solid whitesmoke;
+            box-shadow: .1px 13px 20px 5px rgba(156, 243, 7, 0.668);
+        }
+        &:active{
+            position: absolute;
+            height: 3.7rem;
+
+            width: 7.rem;
+            background: transparent;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+
+@keyframes moveUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: -0.1rem -0.1rem 0.6rem 0.6rem rgb(255, 94, 0);
+    }
+}
+
+
+
+.BookingBox {
+    height: 13rem;
+    width: 60rem;
+    display: flex;
+    border: 2px solid red;
+    position: relative;
+    align-items: center;
+    box-shadow: 1px 5px 10px 10px rgba(149, 149, 174, 0.646);
+    left: 9.5rem;
+    bottom: 38rem;
+    border: 2px solid rgba(7, 7, 7, 0.837);
+
+
+    border-radius: 15px;
+    background-color: rgba(190, 212, 214, 0.251);
+
+    .check1 {
+        h3 {
+            position: absolute;
+            top: 3.8rem;
+            font-size: 20px;
+            word-spacing: 5px;
+            left: 2.7rem;
+            color: rgb(0, 0, 0);
+        }
+
+        #checkIn {
+            border: 1px solid grey;
+            padding: 7px;
+            position: absolute;
+            border-radius: 10px;
+            bottom: 5rem;
+            left: 1.7rem;
+        }
+
+        input {
+            color: rgb(16, 122, 143);
+        }
+    }
+
+    .check2 {
+        h3 {
+            position: absolute;
+            top: 3.8rem;
+            font-size: 20px;
+            left: 15rem;
+            word-spacing: 5px;
+            color: rgb(0, 0, 0);
+        }
+
+        #checkOut {
+            border: 1px solid grey;
+            padding: 7px;
+            position: absolute;
+            border-radius: 10px;
+            bottom: 5rem;
+            left: 14.7rem;
+        }
+
+        input {
+            color: rgb(16, 122, 143);
+        }
+    }
+
+    .adult {
+        h3 {
+            position: absolute;
+            top: 3.8rem;
+            font-size: 20px;
+            left: 27.4rem;
+            word-spacing: 5px;
+            color: rgb(0, 0, 0);
+        }
+
+        select {
+            border: 1px solid grey;
+            padding: 7px;
+            position: absolute;
+            border-radius: 15px;
+            left: 27rem;
+            bottom: 5rem;
+        }
+    }
+
+    .child {
+        h3 {
+            position: absolute;
+            top: 3.8rem;
+            font-size: 20px;
+            left: 35.5rem;
+            word-spacing: 5px;
+            color: rgb(0, 0, 0);
+        }
+
+        select {
+            border: 1px solid grey;
+            padding: 7px;
+            position: absolute;
+            border-radius: 15px;
+            left: 35rem;
+            bottom: 5rem;
+        }
+    }
+
+    .checkAvailablity h3{
+        position: absolute;
+        box-shadow: 1px 5px 10px 10px rgba(149, 174, 140, 0.646);
+        left: 45rem;
+        bottom: 5rem;
+        background-color: whitesmoke;
+        padding: 7px;
+        border-radius: 15px;
+        text-decoration: none;
+
+        &:active {
+            background-color: black;
+            color: whitesmoke;
+        }
+    }
+}
+
+
+.about{
+    position: relative;
+    height: 46rem;
+    margin-top: .2rem;
+    width: 100%;
+    top: 2rem;
+    padding: 5rem 13rem;
+    box-shadow: 1px 1px 5px 5px rgba(94, 95, 93, 0.668);
+    border-radius: 14px;
+    h2{
+        text-align: center;
+        color: rgb(61, 5, 58);
+        font-size: 45px;
+    }
+    p{
+        text-align: center;
+        word-spacing: 4px;
+    }
+    h4{
+       text-align: center; 
+
+    }
+}
+
+.beforeabout{
+    position: relative;
+    display: flex;
+    top: 1rem;
+    width: 98.5vw;
+    justify-content: space-between;
+    height: 25rem;
+    img{
+        position: relative;
+        width: 21rem;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 5px rgba(94, 95, 93, 0.668);
+        &:hover{
+            transform: scaleY(1.1);
+            transition: 1s;
+            border-radius: 20PX;
+            box-shadow: 1px 1px 5px 5px #ffffff;
+            position: relative;
+        }
+        }
+}
+
+
+.fourbox{
+    display: block;
+    height: 130vh;
+    width: 98.5vw;
+    position: relative;
+    top: 4.2rem;
+    .box1{
+        height: 65vh;
+        width: 98vw;
+        position: absolute;
+        display: flex;
+        .boxa1{
+            height: 65vh;
+            width: 50%;
+            h3 {
+                text-align: left;
+                font-size: 30px;
+                position: relative;
+                top: 4rem;
+                font-weight: 600;
+                color: rgb(55, 4, 36);
+                padding: 2rem 3rem;
+            }
+            p {
+                padding: 3rem 3rem;
+                letter-spacing: 1px;
+                word-spacing: 2.3px;
+            }
+        }
+    }
+    .boxa2{
+        height: 65vh;
+        width: 50%;
+        img{
+            height: 100%;
+            width: 100%;
+            box-shadow: 1px 5px 10px 10px rgba(149, 149, 174, 0.646);
+            border-radius: 10px;
+        }
+    }
+
+   .box2{
+    height: 65vh;
+    width: 98vw;
+    position: absolute;
+    top: 50%;
+    display: flex;
+        .boxb1{
+            height: 65vh;
+            width: 50%;
+            img{
+                height: 65vh;
+                width: 100%;
+                box-shadow: 1px 5px 10px 10px rgba(149, 149, 174, 0.646);
+                border-radius: 10px;
+            }
+        }
+        .boxb2{
+            height: 65vh;
+            width: 50%;
+            h3 {
+                text-align: left;
+                font-size: 30px;
+                position: relative;
+                top: 4rem;
+                font-weight: 600;
+                color: rgb(55, 4, 36);
+                padding: 2rem 3rem;
+            }
+            p {
+                padding: 3rem 3rem;
+                letter-spacing: 1px;
+                word-spacing: 2.3px;
+            }
+        }
+    } 
+}
+
+
+.lastcontainer {
+    height: 30rem;
+    width: 99.5%;
+    box-shadow: 1px 3px 10px 10px rgba(149, 149, 174, 0.646);
+    background-color: rgba(35, 31, 31, 0.941);
+    position: relative;
+    top: 7rem;
+    display: flex;
+    justify-content: space-between;
+
+    .container {
+        height: 33rem;
+        width: 25.5rem;
+        color: whitesmoke;
+
+        h1 {
+            border-bottom: 1px solid rgba(190, 186, 178, 0.973);
+            margin: 2.3rem 2rem 2rem 2rem;
+            text-align: center;
+        }
+    }
+    .container {
+        h4 {
+            padding: 2rem;
+            position: relative;
+            letter-spacing: 1.3px;
+            word-spacing: 5px;
+        }
+    }
+
+}
+.symbol {
+    display: flex;
+    padding-left: 2.5rem;
+    position: relative;
+
+    i {
+        height: 30px;
+        width: 25px;
+        font-size: 22px;
+        position: absolute;
+        left: 10px;
+        top: 8px;
+    }
+    p{
+        position: relative;
+        padding: 6px 0px;
+    }
+}
+.firstcontainer {
+    display: flex;
+
+    ul {
+        margin: 1rem 0rem 2rem 0rem;
+        padding: 0rem 2.5rem;
+
+        li {
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            width: 8.5rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
