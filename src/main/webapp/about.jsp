@@ -140,12 +140,12 @@
 
                 <div class="symbol">
                     <i class='bx bxs-phone'></i>
-                    <P>7004557538</P>
+                    <P>70045XXXXX</P>
                 </div>
 
                 <div class="symbol">
                     <i class='bx bxs-phone'></i>
-                    <P>6209118286</P>
+                    <P>62091XXXX</P>
                 </div>
 
             </div>
