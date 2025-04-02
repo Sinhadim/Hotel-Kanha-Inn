@@ -26,8 +26,8 @@
     <h3>Hotel Information</h3>
     <p><strong>Hotel Name:</strong> Krishna Inn</p>
     <p><strong>Address:</strong> 123 Krishna Inn- Bangalore india</p>
-    <p><strong>Phone Number:</strong>+91 6299274951</p>
-    <p><strong>Email:</strong> shikha12@gmail.com</p>
+    <p><strong>Phone Number:</strong>+91 98649XXXXX</p>
+    <p><strong>Email:</strong> abc12@gmail.com</p>
     <p><strong>Operating Hours:</strong> Available 24/7</p>
 
     <!-- Contact Form -->
@@ -57,8 +57,8 @@
 
     <!-- Customer Support & Reservations -->
     <h3>Customer Support & Reservations</h3>
-    <p><strong>Reservation Contact:</strong> 91+7004557552</p>
-    <p><strong>WhatsApp Support:</strong> 91+7456321455</p>
+    <p><strong>Reservation Contact:</strong> +91 70042XXXX</p>
+    <p><strong>WhatsApp Support:</strong> +91 74563XXXX</p>
 
     </div>
 </body>
